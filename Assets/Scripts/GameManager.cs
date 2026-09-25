@@ -166,7 +166,11 @@ public class GameManager : MonoBehaviour
         currentState = GameState.Title;
         SceneManager.LoadScene("TitleScene");
     }
-
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("ゲームを終了しました");
+    }
     /// <summary>ゲームオーバー</summary>
     public static void GameOver()
     {
